@@ -2,16 +2,19 @@
 
 Marketing & Design Professional based in Cebu City.
 
+**Live website:** https://ranarioricaann-portfolio.github.io/graphic-portfolio/
+
 This repository contains my graphic portfolio website (`index.html`) — a single-page portfolio with:
 
 - About
 - Core Skills & Tools
 - Experience and Education
 - Portfolio categories: Social Media Graphics, Logo Design, Product Mockups, and Meta Ads Graphics
+- My Services and contact section
 
 ## View it
 
-Open `index.html` in a browser, or enable GitHub Pages for this repository (Settings → Pages → Deploy from branch → main / root) to publish it as a website.
+Visit the live website above, or open `index.html` in a browser. The site is published with GitHub Pages from the `main` branch (root folder).
 
 ## Contact
 
