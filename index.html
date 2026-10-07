@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<meta name="description" content="Rica Ann D. Ranario — Marketing & Design Professional in Cebu City. Social media graphics, logo design, product mockups, and Meta Ads graphics." />
+<link rel="icon" href="data:," />
+<title>Rica Ann D. Ranario — Graphic Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    color-scheme: light;
+    --black:#000000; --teal:#00564C; --red:#BB2C2C; --coral:#E9543B; --white:#FFFFFF;
+    --cornsilk:#FFFFFF; --sunglow:#E9543B; --ut:#00564C; --aero:#E9543B; --smoky:#000000;
+    --bg:#FFFFFF; --surface:#FFFFFF; --surface2:color-mix(in srgb, #00564C 8%, #FFFFFF); --ink:#000000; --dim:color-mix(in srgb, #000000 68%, #FFFFFF);
+    --border:color-mix(in srgb, #000000 16%, #FFFFFF); --accent:#00564C; --accent-strong:#E9543B; --highlight:#E9543B; --accent-hover:color-mix(in srgb, #E9543B 85%, #000000);
+    --dark-panel:#00564C; --dark-panel-text:#FFFFFF;
+    --cat-social:#E9543B; --cat-logo:#000000; --cat-mock:#00564C; --cat-ads:#BB2C2C;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      color-scheme: dark;
+      --bg:#000000; --surface:color-mix(in srgb, #FFFFFF 8%, #000000); --surface2:color-mix(in srgb, #FFFFFF 15%, #000000); --ink:#FFFFFF; --dim:color-mix(in srgb, #FFFFFF 72%, #000000);
+      --border:color-mix(in srgb, #FFFFFF 24%, #000000); --accent:color-mix(in srgb, #00564C 55%, #FFFFFF); --accent-strong:#E9543B; --highlight:#E9543B; --accent-hover:color-mix(in srgb, #E9543B 80%, #FFFFFF);
+      --dark-panel:#FFFFFF; --dark-panel-text:#000000;
+      --cat-social:#E9543B; --cat-logo:#000000; --cat-mock:#00564C; --cat-ads:#BB2C2C;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none !important; animation:none !important} }
+  body{margin:0;font-family:"Outfit",system-ui,-apple-system,Segoe UI,sans-serif;background:var(--bg);color:var(--ink);line-height:1.5;-webkit-font-smoothing:antialiased}
+  .font-display{font-family:"DM Serif Display",Georgia,serif;font-weight:400}
+  a{color:inherit}
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px}
+  /* Nav */
+  .topnav{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+  .topnav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 20px;max-width:880px;margin:0 auto}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;font-size:14px;letter-spacing:.01em}
+  .brand-mark{width:34px;height:34px;border-radius:50%;background:var(--ink);color:var(--bg);display:flex;align-items:center;justify-content:center;font-family:"DM Serif Display",serif;font-size:13px;flex-shrink:0}
+  .navlinks{display:flex;gap:4px;flex-wrap:wrap;justify-content:flex-end}
+  .navlinks a{text-decoration:none;font-size:13px;font-weight:600;color:var(--dim);padding:7px 11px;border-radius:999px}
+  .navlinks a:hover{color:var(--ink);background:var(--surface2)}
+  .navlinks a.cta{background:var(--accent-strong);color:var(--cornsilk)}
+  .navlinks a.cta:hover{background:var(--accent-hover);color:var(--cornsilk)}
+  /* Hero */
+  .hero{padding:44px 0 8px}
+  .eyebrow{font-size:11px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0}
+  .hero h1{font-size:52px;line-height:1.02;margin:12px 0 0}
+  .hero h1 em{font-style:italic;color:var(--accent-strong)}
+  .hero-sub{margin:16px 0 0;font-size:16px;line-height:1.65;color:var(--dim);max-width:560px}
+  .hero-sub strong{color:var(--ink)}
+  .avail{display:inline-flex;align-items:center;gap:7px;margin-top:18px;font-size:12px;font-weight:700;padding:7px 12px;border-radius:999px;background:color-mix(in srgb, var(--accent) 12%, var(--surface));border:1px solid color-mix(in srgb, var(--accent) 45%, var(--border));color:var(--ink)}
+  .avail-dot{width:8px;height:8px;border-radius:50%;background:var(--highlight);box-shadow:0 0 0 1.5px var(--ink);flex-shrink:0}
+  .contact-row{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+  .pill{display:inline-flex;align-items:center;gap:7px;text-decoration:none;font-size:13px;font-weight:600;padding:9px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface)}
+  .pill:hover{border-color:var(--accent)}
+  .pill.primary{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .pill svg{width:14px;height:14px;flex-shrink:0}
+  /* Category strip */
+  .cat-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:30px}
+  .cat-card{border:1px solid var(--border);background:var(--surface);border-radius:18px;padding:16px 14px;text-align:left;cursor:pointer;font-family:inherit;color:inherit;width:100%}
+  .cat-card:hover{border-color:var(--accent)}
+  .cat-card .swatch{width:100%;height:44px;border-radius:10px;margin-bottom:12px;display:flex;align-items:center;justify-content:center;color:var(--smoky);border:1px solid var(--border)}
+  .cat-card[data-cat="Logo Design"] .swatch{background:var(--cat-logo);color:var(--white)}
+  .cat-card[data-cat="Social Media"] .swatch{background:var(--cat-social);color:var(--white)}
+  .cat-card[data-cat="Product Mockup"] .swatch{background:var(--cat-mock);color:var(--white)}
+  .cat-card[data-cat="Meta Ads"] .swatch{background:var(--cat-ads);color:var(--white)}
+  .cat-card .swatch svg{width:22px;height:22px}
+  .cat-card h3{margin:0;font-size:13px;font-weight:700;line-height:1.3}
+  .cat-card p{margin:5px 0 0;font-size:11.5px;line-height:1.45;color:var(--dim)}
+  @media (max-width:640px){ .cat-strip{grid-template-columns:1fr 1fr} .hero h1{font-size:42px} }
+  /* Sections */
+  section{padding:34px 0 6px}
+  .sec-head{display:flex;align-items:baseline;justify-content:space-between;gap:12px;flex-wrap:wrap}
+  .sec-head h2{font-size:28px;margin:0}
+  .sec-head .note{font-size:12.5px;color:var(--dim);font-weight:500}
+  .rule{height:1px;background:var(--border);margin-top:14px}
+  /* Work / filters */
+  .filters{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+  .filters button{font-family:inherit;font-size:13px;font-weight:600;padding:9px 15px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--dim);cursor:pointer}
+  .filters button[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+  .filters button:hover{border-color:var(--accent)}
+  .empty{margin-top:16px;border:1.5px dashed var(--border);background:var(--surface);border-radius:22px;padding:38px 24px;text-align:center}
+  .empty .big{font-size:24px;margin:0}
+  .empty p.desc{margin:10px auto 0;font-size:14px;line-height:1.6;color:var(--dim);max-width:440px}
+  .empty a.btn{display:inline-block;margin-top:18px;background:var(--accent-strong);color:var(--cornsilk);text-decoration:none;font-weight:700;font-size:13.5px;padding:11px 20px;border-radius:999px}
+  .empty a.btn:hover{background:var(--accent-hover)}
+  /* Services detail */
+  .services{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  @media (max-width:640px){ .services{grid-template-columns:1fr} }
+  .svc{border:1px solid var(--border);background:var(--surface);border-radius:20px;padding:20px}
+  .svc .tag{display:inline-block;font-size:10px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--white);padding:4px 9px;border-radius:999px;border:1px solid var(--border)}
+  .svc h3{margin:12px 0 0;font-size:17px}
+  .svc p{margin:7px 0 0;font-size:13.5px;line-height:1.6;color:var(--dim)}
+  .svc ul{margin:10px 0 0;padding:0;list-style:none}
+  .svc ul li{font-size:13px;padding:5px 0 5px 18px;position:relative;color:var(--ink)}
+  .svc ul li::before{content:"";position:absolute;left:0;top:12px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+  /* About panel */
+  .about{background:var(--dark-panel);color:var(--dark-panel-text);border-radius:26px;padding:28px;margin-top:18px}
+  .about h2{font-size:26px;margin:0}
+  .about p.lead{font-size:14.5px;line-height:1.7;margin:12px 0 0;opacity:.92}
+  .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:22px}
+  @media (max-width:640px){ .about-grid{grid-template-columns:1fr} }
+  .about h4{margin:0;font-size:11px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;opacity:.6}
+  .about ul{margin:10px 0 0;padding:0;list-style:none}
+  .about ul li{font-size:13.5px;padding:4px 0}
+  .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:10px}
+  .chips span{font-size:11.5px;font-weight:600;padding:6px 11px;border-radius:999px;border:1px solid color-mix(in srgb, currentColor 25%, transparent);background:color-mix(in srgb, currentColor 7%, transparent)}
+  /* Experience */
+  .jobs{margin-top:6px}
+  .job{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--border)}
+  .job:last-child{border-bottom:none}
+  .job-main{flex:1;min-width:0}
+  .job h3{margin:0;font-size:15.5px}
+  .job .co{color:var(--accent-strong);font-weight:600;font-size:14px;margin-top:1px}
+  .job .desc{font-size:13.5px;color:var(--dim);line-height:1.6;margin-top:5px}
+  .job .period{font-size:11.5px;font-weight:700;color:var(--dim);white-space:nowrap;padding-top:3px;text-align:right}
+  @media (max-width:520px){ .job{flex-direction:column;gap:4px} .job .period{text-align:left} }
+  /* Education + contact */
+  .two-col{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
+  @media (max-width:640px){ .two-col{grid-template-columns:1fr} }
+  .info-card{border:1px solid var(--border);background:var(--surface);border-radius:20px;padding:20px}
+  .info-card h3{margin:0;font-size:16px}
+  .info-card p{margin:6px 0 0;font-size:13.5px;color:var(--dim);line-height:1.6}
+  .info-card a{color:var(--accent-strong);font-weight:600;text-decoration:none}
+  .info-card a:hover{text-decoration:underline}
+  .contact-card{background:var(--accent-strong);color:var(--cornsilk);border:none}
+  .contact-card p{color:color-mix(in srgb, var(--cornsilk) 88%, var(--aero))}
+  .contact-card a{color:var(--cornsilk);text-decoration:underline}
+  .contact-actions{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .contact-actions a{background:var(--cornsilk);color:var(--smoky);text-decoration:none;font-weight:700;font-size:13px;padding:10px 16px;border-radius:999px}
+  .contact-actions a.ghost{background:transparent;color:var(--cornsilk);border:1.5px solid color-mix(in srgb, var(--cornsilk) 70%, transparent)}
+  footer{padding:30px 0 44px;text-align:center}
+  footer p{font-size:12px;color:var(--dim);margin:0;line-height:1.7}
+  :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+</style>
+</head>
+<body>
+
+<nav class="topnav" aria-label="Portfolio sections">
+  <div class="topnav-inner">
+    <a class="brand" href="#top"><span class="brand-mark">RR</span> Rica Ann D. Ranario</a>
+    <div class="navlinks">
+      <a href="#work">Work</a>
+      <a href="#services">Services</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a class="cta" href="mailto:ranarioricaann@gmail.com?subject=Graphic%20Artist%20Opportunity">Hire me</a>
+    </div>
+  </div>
+</nav>
+
+<div class="wrap" id="top">
+
+  <!-- HERO -->
+  <header class="hero">
+    <p class="eyebrow">Cebu City, Philippines · Graphic Portfolio</p>
+    <h1 class="font-display">Rica Ann<br />D. Ranario<em>.</em></h1>
+    <p class="hero-sub"><strong>Marketing &amp; Design Professional</strong> crafting social media graphics, brand identities, product mockups, and Meta Ads that convert. Designing professionally since 2016 — from print-ready marketing collaterals to everyday social content and paid campaigns.</p>
+    <div><span class="avail"><span class="avail-dot" aria-hidden="true"></span> Open to Graphic Artist roles — Cebu / Remote PH</span></div>
+    <div class="contact-row">
+      <a class="pill primary" href="mailto:ranarioricaann@gmail.com?subject=Graphic%20Artist%20Opportunity">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        ranarioricaann@gmail.com
+      </a>
+      <a class="pill" href="tel:+639945936168">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        0994 593 6168
+      </a>
+      <a class="pill" href="mailto:rainy_rica@yahoo.com">rainy_rica@yahoo.com</a>
+    </div>
+
+    <div class="cat-strip" role="group" aria-label="Portfolio categories — tap to jump to that gallery">
+      <button type="button" class="cat-card" data-cat="Social Media" data-jump="Social Media">
+        <span class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></span>
+        <h3>Social Media Graphics</h3>
+        <p>Posts, stories &amp; campaign visuals</p>
+      </button>
+      <button type="button" class="cat-card" data-cat="Logo Design" data-jump="Logo Design">
+        <span class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5L8 13.8 2 9.2h7.6z"/></svg></span>
+        <h3>Logo Design</h3>
+        <p>Brand marks &amp; identity systems</p>
+      </button>
+      <button type="button" class="cat-card" data-cat="Product Mockup" data-jump="Product Mockup">
+        <span class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></span>
+        <h3>Product Mockups</h3>
+        <p>Packaging &amp; product visuals</p>
+      </button>
+      <button type="button" class="cat-card" data-cat="Meta Ads" data-jump="Meta Ads">
+        <span class="swatch"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M7 13v5a2 2 0 0 0 4 0v-4M17 8a4 4 0 0 1 0 6"/></svg></span>
+        <h3>Meta Ads Graphics</h3>
+        <p>Paid social creatives that convert</p>
+      </button>
+    </div>
+  </header>
+
+  <!-- WORK -->
+  <section id="work" aria-label="Portfolio work">
+    <div class="sec-head">
+      <h2 class="font-display">Selected Work</h2>
+      <span class="note" id="work-count">4 categories</span>
+    </div>
+    <div class="rule"></div>
+    <div class="filters" role="group" aria-label="Filter work by category" id="filters">
+      <button type="button" data-filter="All" aria-pressed="true">All Work</button>
+      <button type="button" data-filter="Social Media" aria-pressed="false">Social Media</button>
+      <button type="button" data-filter="Logo Design" aria-pressed="false">Logo Design</button>
+      <button type="button" data-filter="Product Mockup" aria-pressed="false">Product Mockups</button>
+      <button type="button" data-filter="Meta Ads" aria-pressed="false">Meta Ads</button>
+    </div>
+    <div class="empty" id="empty-state">
+      <p class="big font-display" id="empty-title">New work is on its way</p>
+      <p class="desc" id="empty-desc">Rica is currently adding her design pieces to this portfolio. In the meantime, explore what she designs below — or get in touch and she can share samples directly for the role you're hiring for.</p>
+      <a class="btn" href="mailto:ranarioricaann@gmail.com?subject=Portfolio%20Samples%20Request">Request samples by email</a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" aria-label="Design services">
+    <div class="sec-head">
+      <h2 class="font-display">What I Design</h2>
+      <span class="note">Four specialisations</span>
+    </div>
+    <div class="rule"></div>
+    <div class="services">
+      <article class="svc">
+        <span class="tag" style="background:var(--cat-social)">Social Media</span>
+        <h3>Social Media Graphics</h3>
+        <p>Scroll-stopping content that keeps a brand consistent day after day — built for feeds, stories, and promotions.</p>
+        <ul>
+          <li>Feed posts &amp; carousel graphics</li>
+          <li>Stories, covers &amp; profile assets</li>
+          <li>Promo &amp; sale announcement visuals</li>
+        </ul>
+      </article>
+      <article class="svc">
+        <span class="tag" style="background:var(--cat-logo);color:var(--cornsilk)">Logo Design</span>
+        <h3>Logo &amp; Brand Identity</h3>
+        <p>Clean, memorable marks and the supporting visuals a brand needs to show up the same way everywhere.</p>
+        <ul>
+          <li>Logo design &amp; variations</li>
+          <li>Brand identity &amp; logo systems</li>
+          <li>Marketing collateral design</li>
+        </ul>
+      </article>
+      <article class="svc">
+        <span class="tag" style="background:var(--cat-mock)">Product Mockups</span>
+        <h3>Product Mockups</h3>
+        <p>Product visuals that help customers picture the real thing — for catalogues, listings, and sales materials.</p>
+        <ul>
+          <li>Product &amp; packaging mockups</li>
+          <li>Sales &amp; catalogue visuals</li>
+          <li>Print-ready marketing graphics</li>
+        </ul>
+      </article>
+      <article class="svc">
+        <span class="tag" style="background:var(--cat-ads)">Meta Ads</span>
+        <h3>Meta Ads Graphics</h3>
+        <p>Paid social creatives designed to earn the click — clear offer, strong hierarchy, made for Facebook &amp; Instagram placements.</p>
+        <ul>
+          <li>Facebook &amp; Instagram ad creatives</li>
+          <li>Campaign &amp; promo key visuals</li>
+          <li>Digital advertising design support</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-label="About Rica">
+    <div class="about">
+      <h2 class="font-display">About</h2>
+      <p class="lead">Marketing and Design Professional with experience spanning graphic design, social media marketing, digital advertising, and video reporting. I help brands show up consistently — from everyday social content and product visuals to logo systems and paid Meta campaigns. My background in Information Technology gives me a practical, detail-driven approach to design production and file delivery.</p>
+      <div class="about-grid">
+        <div>
+          <h4>Core Skills</h4>
+          <ul>
+            <li>Social Media Graphics</li>
+            <li>Graphic Design &amp; Layout</li>
+            <li>Digital Advertising</li>
+            <li>Meta Ads Creatives</li>
+            <li>Brand Identity &amp; Logos</li>
+            <li>Product Mockups</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Tools I Use</h4>
+          <div class="chips">
+            <span>Photoshop</span><span>Illustrator</span><span>CorelDRAW X7</span><span>Canva</span><span>VSDC Video Editor</span><span>Dreamweaver</span><span>Meta Ads Manager</span>
+          </div>
+          <h4 style="margin-top:22px">Based In</h4>
+          <p style="margin:10px 0 0;font-size:13.5px">Cebu City, Philippines · Available for Cebu-based and remote PH roles</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" aria-label="Work experience">
+    <div class="sec-head">
+      <h2 class="font-display">Experience</h2>
+      <span class="note">2016 — Present</span>
+    </div>
+    <div class="rule"></div>
+    <div class="jobs">
+      <div class="job">
+        <div class="job-main">
+          <h3>Marketing Assistant</h3>
+          <p class="co">Staff Outsourcing Solutions</p>
+          <p class="desc">Created and managed social media graphics and content to boost engagement, executed and optimised Meta Ads campaigns, and designed website visuals for consistent branding.</p>
+        </div>
+        <span class="period">Aug 2024 — Present</span>
+      </div>
+      <div class="job">
+        <div class="job-main">
+          <h3>Video Report Specialist</h3>
+          <p class="co">Qima Philippines Inc.</p>
+          <p class="desc">Edited and finalised client reports using video editing tools and presentation software, validated inspection reports for accuracy and compliance, and delivered reports on time.</p>
+        </div>
+        <span class="period">Oct 2022 — Apr 2024</span>
+      </div>
+      <div class="job">
+        <div class="job-main">
+          <h3>Social Media Marketing Assistant</h3>
+          <p class="co">Vismotor Corp.</p>
+          <p class="desc">Managed customer inquiries via Facebook and social platforms, created and published promotional content, and maintained product listings on Lazada, Shopee, and the company website.</p>
+        </div>
+        <span class="period">Nov 2020 — Jan 2021</span>
+      </div>
+      <div class="job">
+        <div class="job-main">
+          <h3>Graphic Artist</h3>
+          <p class="co">Eastworld Sales Philippines Inc.</p>
+          <p class="desc">Designed logos, marketing materials, and layouts for various clients, refined designs from client feedback, and prepared final design specifications for production.</p>
+        </div>
+        <span class="period">Jul 2016 — Feb 2020</span>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="info-card">
+        <h3>🎓 Education</h3>
+        <p><strong style="color:var(--ink)">BS Information Technology</strong><br />Asian College of Technology · 2016</p>
+      </div>
+      <div class="info-card contact-card">
+        <h3>Let's work together</h3>
+        <p>Hiring a graphic artist? Send the role details and I'll reply with relevant samples.</p>
+        <div class="contact-actions">
+          <a href="mailto:ranarioricaann@gmail.com?subject=Graphic%20Artist%20Opportunity">Email me</a>
+          <a class="ghost" href="tel:+639945936168">Call 0994 593 6168</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><strong style="color:var(--ink)">Rica Ann D. Ranario</strong> · Cebu City, Philippines<br />
+    <a href="mailto:ranarioricaann@gmail.com">ranarioricaann@gmail.com</a> · <a href="mailto:rainy_rica@yahoo.com">rainy_rica@yahoo.com</a> · <a href="tel:+639945936168">0994 593 6168</a></p>
+  </footer>
+</div>
+
+<script>
+(function(){
+  var LABELS = {
+    "All": { title: "New work is on its way", desc: "Rica is currently adding her design pieces to this portfolio. In the meantime, explore what she designs below \u2014 or get in touch and she can share samples directly for the role you\u2019re hiring for." },
+    "Social Media": { title: "Social Media Graphics \u2014 coming soon", desc: "Feed posts, stories, and campaign visuals are being added to this section. Email Rica and she can share social media samples directly." },
+    "Logo Design": { title: "Logo Design \u2014 coming soon", desc: "Logo and brand identity pieces are being added to this section. Email Rica and she can share logo samples directly." },
+    "Product Mockup": { title: "Product Mockups \u2014 coming soon", desc: "Product and packaging mockups are being added to this section. Email Rica and she can share mockup samples directly." },
+    "Meta Ads": { title: "Meta Ads Graphics \u2014 coming soon", desc: "Meta Ads creatives are being added to this section. Email Rica and she can share ad samples directly." }
+  };
+  var titleEl = document.getElementById('empty-title');
+  var descEl = document.getElementById('empty-desc');
+  var countEl = document.getElementById('work-count');
+  var buttons = Array.prototype.slice.call(document.querySelectorAll('#filters button'));
+
+  function setFilter(name){
+    buttons.forEach(function(b){ b.setAttribute('aria-pressed', b.getAttribute('data-filter') === name ? 'true' : 'false'); });
+    var info = LABELS[name] || LABELS['All'];
+    titleEl.textContent = info.title;
+    descEl.textContent = info.desc;
+    countEl.textContent = name === 'All' ? '4 categories' : name;
+  }
+  buttons.forEach(function(b){
+    b.addEventListener('click', function(){ setFilter(b.getAttribute('data-filter')); });
+  });
+  Array.prototype.slice.call(document.querySelectorAll('[data-jump]')).forEach(function(card){
+    card.addEventListener('click', function(){
+      setFilter(card.getAttribute('data-jump'));
+      var target = document.getElementById('work');
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  });
+})();
+</script>
+</body>
+</html>
