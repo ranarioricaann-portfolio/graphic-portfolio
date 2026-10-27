@@ -15,11 +15,11 @@ Live URL (once deployed): https://ranarioricaann-portfolio.github.io/graphic-por
 | `meta-ads-graphics.html` | Meta Ads Graphics folder page: the 2 Meta Ad projects (see below) |
 | `about.html` | Professional intro, skills, software, experience timeline, education, languages |
 | `contact.html` | Employment/recruitment and freelance enquiries (mailto — see below) |
-| `celebrity-meta-ad.html` | REAL case study: Celebrity Cruises — Limited-Time Offer Meta Ad (see below) |
-| `explora-meta-ad.html` | REAL case study: Explora Journeys — Exceptional Savings Meta Ad (see below) |
+| `celebrity-meta-ad.html` | REAL project: Celebrity Cruises — Limited-Time Offer Meta Ad (see below) |
+| `explora-meta-ad.html` | REAL project: Explora Journeys — Exceptional Savings Meta Ad (see below) |
 | `social-media-stories.html` | Social Media Graphics folder page — REAL gallery: 8 story graphics (see below) |
 | `assets/stories/` | Real social media story graphics (JPG) shown in the Social Media Graphics folder (`social-media-stories.html`); one is also the folder cover on `work.html` / `index.html` |
-| `project-template.html` | Case-study TEMPLATE (labelled placeholder) to copy for each real project |
+| `project-template.html` | Project TEMPLATE (labelled placeholder) to copy for each real project |
 | `assets/videos/` | Real project videos + poster frames for the Celebrity Cruises and Explora Journeys Meta Ads (see below) |
 | `assets/css/style.css` | All styles. Palette only: #1D1D1B, #FFFFFF, #F3F0EA, #C6A77B, #77736C, #E6E0D6 |
 | `assets/js/main.js` | Mobile nav toggle, portfolio filters, active nav state, footer year |
@@ -38,7 +38,7 @@ Work is organised into **category folders**, like the "Selected Work" folder car
 - **Social Media Graphics** → `social-media-stories.html` (8 real story graphics)
 - **Logo Design** → `logo-design.html` (placeholder: work on its way, samples on request)
 - **Product Mockups** → `product-mockups.html` (placeholder: work on its way, samples on request)
-- **Meta Ads Graphics** → `meta-ads-graphics.html` (2 real projects · 8 videos), whose cards open the case studies `celebrity-meta-ad.html` and `explora-meta-ad.html`
+- **Meta Ads Graphics** → `meta-ads-graphics.html` (2 real projects · 8 videos), whose cards open the project pages `celebrity-meta-ad.html` and `explora-meta-ad.html`
 
 These four folders are the portfolio's final folder set (confirmed by Anne on 2026-10-28, matching her reference screenshot). Naming: the advertising category's display name is **Meta Ads Graphics** everywhere (its internal `data-category` value stays `digital-advertising`). The Logo Design folder's internal `data-category` value is `logo-design`, and Product Mockups' is `product-mockups`.
 
@@ -55,7 +55,7 @@ Its files live in `assets/videos/` — one MP4 plus one poster JPG per placement
 | `celebrity-cruiseweb-meta-ad-9x16.mp4` / `-9x16-poster.jpg` | 9:16 vertical, 1080 × 1920 |
 | `celebrity-cruiseweb-meta-ad-16x9.mp4` / `-16x9-poster.jpg` | 16:9 widescreen, 1920 × 1080 |
 
-Each video is about 16 seconds and plays on the case-study page with native `<video controls>`; posters were extracted from the videos at ~3 seconds. No results, metrics, or role claims are stated for this project — those were not documented with the sample.
+Each video is about 16 seconds and plays on the project page with native `<video controls>`; posters were extracted from the videos at ~3 seconds. No results, metrics, or role claims are stated for this project — those were not documented with the sample.
 
 ## Second real project (added 2026-10-28)
 
@@ -70,7 +70,7 @@ Its files also live in `assets/videos/` — one MP4 plus one poster JPG per plac
 | `explora-cruiseweb-meta-ad-9x16.mp4` / `-9x16-poster.jpg` | 9:16 vertical, 1080 × 1920 |
 | `explora-cruiseweb-meta-ad-16x9.mp4` / `-16x9-poster.jpg` | 16:9 widescreen, 1920 × 1080 |
 
-Each video is about 21 seconds and plays on the case-study page with native `<video controls>`; posters were extracted from the videos at ~3.5 seconds. The creative promotes an "Exceptional Savings" all-inclusive offer (up to 30% off + up to $500 onboard credit). No results, metrics, or role claims are stated for this project — those were not documented with the sample.
+Each video is about 21 seconds and plays on the project page with native `<video controls>`; posters were extracted from the videos at ~3.5 seconds. The creative promotes an "Exceptional Savings" all-inclusive offer (up to 30% off + up to $500 onboard credit). No results, metrics, or role claims are stated for this project — those were not documented with the sample.
 
 ## Third real project (added 2026-10-28)
 
@@ -113,9 +113,9 @@ python3 -m http.server 8000
    - set `data-category` to the folder's value: `social-media-graphics`, `logo-design`, `product-mockups`, or `digital-advertising` (Meta Ads Graphics),
    - replace the placeholder `<img>` with the real image and write descriptive alt text,
    - replace the title and description with the real project's title and a short, factual description,
-   - point the card link to the new case-study page (next step).
+   - point the card link to the new project page (next step).
    Then update that folder's card on `work.html` and `index.html` (cover image and content count, e.g. "8 story graphics").
-3. Copy `project-template.html` to a new file, e.g. `project-my-project.html`, and replace every `[Placeholder: …]` with the real overview, the work itself (gallery images or videos), and deliverables. Case-study pages intentionally keep it short — title, overview, the work, deliverables, related projects — and do NOT use Objective / Design Challenge, My Role & Responsibilities, Creative Execution, Final Design Gallery (as a labelled section), or Results / Documented Results sections; those were removed on purpose (Anne, 2026-10-28), so do not re-add them.
+3. Copy `project-template.html` to a new file, e.g. `project-my-project.html`, and replace every `[Placeholder: …]` with the real overview, the work itself (gallery images or videos), and deliverables. Project pages intentionally keep it short — title, overview, the work, deliverables, related projects — and do NOT use Objective / Design Challenge, My Role & Responsibilities, Creative Execution, Final Design Gallery (as a labelled section), or Results / Documented Results sections; those were removed on purpose (Anne, 2026-10-28), so do not re-add them.
 4. If the project is self-initiated/concept work, label it clearly: **"Self-Initiated Concept Project."** Never associate concept work with a real company.
 5. Add the new page URL to `sitemap.xml`.
 
