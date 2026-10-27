@@ -17,7 +17,7 @@ Live URL (once deployed): https://ranarioricaann-portfolio.github.io/graphic-por
 | `contact.html` | Employment/recruitment and freelance enquiries (mailto — see below) |
 | `celebrity-meta-ad.html` | REAL project: Celebrity Cruises — Limited-Time Offer Meta Ad (see below) |
 | `explora-meta-ad.html` | REAL project: Explora Journeys — Exceptional Savings Meta Ad (see below) |
-| `social-media-stories.html` | Social Media Graphics folder page — REAL gallery: 8 story graphics (see below) |
+| `social-media-stories.html` | Social Media Graphics folder page — REAL gallery: 7 story graphics (see below) |
 | `assets/stories/` | Real social media story graphics (JPG) shown in the Social Media Graphics folder (`social-media-stories.html`); one is also the folder cover on `work.html` / `index.html` |
 | `project-template.html` | Project TEMPLATE (labelled placeholder) to copy for each real project |
 | `assets/videos/` | Real project videos + poster frames for the Celebrity Cruises and Explora Journeys Meta Ads (see below) |
@@ -35,7 +35,7 @@ All internal links and asset paths are relative, so the site works correctly as 
 Work is organised into **category folders**, like the "Selected Work" folder cards Anne asked for: each category's pieces live inside its own folder page, entered from a folder card.
 
 - `work.html` is the folder index (also mirrored as the **Selected Work** section on `index.html`): one folder card per category with a cover image, the folder name, and a content count.
-- **Social Media Graphics** → `social-media-stories.html` (8 real story graphics)
+- **Social Media Graphics** → `social-media-stories.html` (7 real story graphics)
 - **Logo Design** → `logo-design.html` (placeholder: work on its way, samples on request)
 - **Product Mockups** → `product-mockups.html` (placeholder: work on its way, samples on request)
 - **Meta Ads Graphics** → `meta-ads-graphics.html` (2 real projects · 8 videos), whose cards open the project pages `celebrity-meta-ad.html` and `explora-meta-ad.html`
@@ -74,7 +74,7 @@ Each video is about 21 seconds and plays on the project page with native `<video
 
 ## Third real project (added 2026-10-28)
 
-**Social Media Stories** (`social-media-stories.html` — the Social Media Graphics folder page; internal `data-category` value `social-media-graphics`) is a set of eight real story-format graphics, each designed for a cruise or tour brand and co-branded with The Cruise Web. The Celebrity Cruises Spring Sale graphic is the folder's cover image on `work.html` and `index.html`.
+**Social Media Stories** (`social-media-stories.html` — the Social Media Graphics folder page; internal `data-category` value `social-media-graphics`) is a set of seven real story-format graphics, each designed for a cruise or tour brand and co-branded with The Cruise Web. The Celebrity Cruises Spring Sale graphic is the folder's cover image on `work.html` and `index.html`.
 
 The image files live in `assets/stories/`:
 
@@ -86,7 +86,6 @@ The image files live in `assets/stories/`:
 | `story-holland-america-travel-by-sea.jpg` | Holland America — Travel By Sea Story (free gratuities, Have It All package, free kids' fares, up to $300 onboard credit) | 1080 × 1920 |
 | `story-norwegian-50-off.jpg` | Norwegian Cruise Line — 50% Off Story (50% off all cruises, free open bar, up to $200 onboard credit, save $250) | 1080 × 1920 |
 | `story-oceania-voyages.jpg` | Oceania Cruises — Collection of Voyages Story (2028 & 2029, 230+ sailings, 60 overnight stays) | 1080 × 1920 |
-| `story-royal-caribbean-kids-sail-free.jpg` | Royal Caribbean — Kids Sail Free Story (up to 60% off 2nd guest, free 3rd & 4th guest, free specialty dining for 2) | 187 × 333 — low resolution, as provided (not upscaled) |
 | `story-tauck-travel-beyond-ordinary.jpg` | Tauck — Travel Beyond Ordinary Story (first-time guests: one complimentary pre/post hotel stay, 2026/2027 journeys) | 1080 × 1920 |
 
 On the gallery page each graphic is shown in full at its correct 9:16 proportions (`object-fit: contain`, no cropping of the artwork's text). No results, metrics, or role claims are stated for these graphics — those were not documented with the samples.
@@ -114,7 +113,7 @@ python3 -m http.server 8000
    - replace the placeholder `<img>` with the real image and write descriptive alt text,
    - replace the title and description with the real project's title and a short, factual description,
    - point the card link to the new project page (next step).
-   Then update that folder's card on `work.html` and `index.html` (cover image and content count, e.g. "8 story graphics").
+   Then update that folder's card on `work.html` and `index.html` (cover image and content count, e.g. "7 story graphics").
 3. Copy `project-template.html` to a new file, e.g. `project-my-project.html`, and replace every `[Placeholder: …]` with the real overview, the work itself (gallery images or videos), and deliverables. Project pages intentionally keep it short — title, overview, the work, deliverables, related projects — and do NOT use Objective / Design Challenge, My Role & Responsibilities, Creative Execution, Final Design Gallery (as a labelled section), or Results / Documented Results sections; those were removed on purpose (Anne, 2026-10-28), so do not re-add them.
 4. If the project is self-initiated/concept work, label it clearly: **"Self-Initiated Concept Project."** Never associate concept work with a real company.
 5. Add the new page URL to `sitemap.xml`.
