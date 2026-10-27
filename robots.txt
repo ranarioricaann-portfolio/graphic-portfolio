@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ranarioricaann-portfolio.github.io/graphic-portfolio/sitemap.xml

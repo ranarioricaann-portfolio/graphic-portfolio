@@ -1,553 +1,129 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-<meta name="color-scheme" content="light dark" />
-<meta name="description" content="Rica Ann D. Ranario — Graphic Designer in Cebu City. Social media graphics, logo design, product mockups, and Meta Ads graphics." />
-<link rel="icon" href="data:," />
-<title>Rica Ann D. Ranario — Graphic Portfolio</title>
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Outfit:wght@400;500;600;700&family=Dancing+Script:wght@600;700&display=swap" rel="stylesheet" />
-<style>
-  :root{
-    color-scheme: light;
-    --cream:#F7F0E6; --beige:#EFE3D3; --terra:#A65A3E; --rust:#8F4A32; --green:#1F3D2B; --green-deep:#162C1F;
-    --ink:#2E2620; --white:#FFFFFF;
-    --bg:#F7F0E6; --surface:#FFFFFF; --panel:#EFE3D3; --dim:color-mix(in srgb, #2E2620 70%, #F7F0E6);
-    --border:color-mix(in srgb, #2E2620 16%, #F7F0E6); --line:color-mix(in srgb, #A65A3E 38%, #F7F0E6);
-    --footer-bg:#14251B;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      color-scheme: dark;
-      --bg:#1C1712; --surface:#2A231C; --panel:#33291F; --ink:#F7F0E6; --dim:color-mix(in srgb, #F7F0E6 72%, #1C1712);
-      --border:color-mix(in srgb, #F7F0E6 20%, #1C1712); --line:color-mix(in srgb, #A65A3E 60%, #1C1712);
-      --footer-bg:#0F1D14;
-    }
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} *{transition:none !important} }
-  body{margin:0;font-family:"Outfit",system-ui,-apple-system,"Segoe UI",sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;-webkit-font-smoothing:antialiased}
-  .serif{font-family:"Playfair Display",Georgia,serif}
-  .script{font-family:"Dancing Script",cursive}
-  a{color:inherit}
-  .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
-  :focus-visible{outline:2px solid var(--terra);outline-offset:2px}
-
-  /* 1 — Utility bar */
-  .utility{background:var(--green);color:#F7F0E6;font-size:12.5px}
-  .utility-inner{max-width:1120px;margin:0 auto;padding:8px 24px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
-  .utility a{color:#F7F0E6;text-decoration:none;font-weight:600}
-  .utility a:hover{text-decoration:underline}
-  .utility .mid{opacity:.85}
-  .utility .right{font-style:italic;font-family:"Playfair Display",serif}
-  @media (max-width:680px){ .utility-inner{justify-content:center;text-align:center;flex-direction:column;gap:2px;padding:9px 16px} }
-
-  /* 2 — Header / nav */
-  .site-header{position:sticky;top:0;z-index:30;background:color-mix(in srgb, var(--bg) 92%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-  .header-inner{max-width:1120px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  .wordmark{text-decoration:none;line-height:1.1}
-  .wordmark .name{font-family:"Playfair Display",serif;font-size:24px;font-weight:700;letter-spacing:.01em}
-  .wordmark .role{display:block;font-family:"Outfit",sans-serif;font-size:10.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:var(--terra);margin-top:3px}
-  .mainnav{display:flex;align-items:center;gap:4px;flex-wrap:wrap}
-  .mainnav a.navlink{text-decoration:none;font-size:13.5px;font-weight:600;color:var(--dim);padding:8px 11px;border-radius:999px}
-  .mainnav a.navlink:hover{color:var(--ink);background:var(--panel)}
-  .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border-radius:50%;border:1px solid var(--border);color:var(--ink);text-decoration:none;background:var(--surface)}
-  .icon-btn:hover{border-color:var(--terra);color:var(--terra)}
-  .icon-btn svg{width:15px;height:15px}
-  .btn{display:inline-flex;align-items:center;gap:8px;text-decoration:none;font-size:12.5px;font-weight:700;letter-spacing:.08em;padding:12px 24px;border-radius:999px;border:1.5px solid transparent;transition:background .2s,color .2s,border-color .2s}
-  .btn-terra{background:var(--terra);color:#fff;border-color:var(--terra)}
-  .btn-terra:hover{background:var(--rust);border-color:var(--rust)}
-  .btn-outline{background:transparent;color:var(--ink);border-color:var(--ink)}
-  .btn-outline:hover{border-color:var(--terra);color:var(--terra)}
-  .btn-outline-terra{background:transparent;color:var(--terra);border-color:var(--terra)}
-  .btn-outline-terra:hover{background:var(--terra);color:#fff}
-  .btn-cream{background:var(--cream);color:var(--green);border-color:var(--cream)}
-  .btn-cream:hover{background:var(--terra);border-color:var(--terra);color:#fff}
-  .btn-talk{padding:10px 20px}
-  @media (max-width:760px){ .mainnav .navlink{padding:7px 8px;font-size:12.5px} }
-
-  /* 3 — Hero */
-  .hero{padding:56px 0 48px}
-  .hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
-  @media (max-width:860px){ .hero-grid{grid-template-columns:1fr;gap:32px} }
-  .eyebrow{font-size:11.5px;font-weight:700;letter-spacing:.24em;text-transform:uppercase;color:var(--terra);margin:0;display:flex;align-items:center;gap:10px}
-  .eyebrow::before{content:"";width:34px;height:1.5px;background:var(--terra)}
-  .hero h1{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(38px,5.4vw,58px);line-height:1.12;margin:18px 0 0}
-  .hero h1 em{font-style:italic;color:var(--terra)}
-  .hero-sub{margin:20px 0 0;font-size:16px;line-height:1.7;color:var(--dim);max-width:520px}
-  .hero-sub strong{color:var(--ink)}
-  .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
-  .hero-facts{display:flex;flex-wrap:wrap;gap:0;margin-top:36px;border-top:1px solid var(--border);padding-top:20px}
-  .hero-facts div{padding-right:26px;margin-right:26px;border-right:1px solid var(--border)}
-  .hero-facts div:last-child{border-right:none;margin-right:0;padding-right:0}
-  .hero-facts .num{font-family:"Playfair Display",serif;font-size:24px;font-weight:700;color:var(--green)}
-  @media (prefers-color-scheme: dark){ .hero-facts .num{color:var(--cream)} }
-  .hero-facts .lbl{display:block;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--dim);margin-top:2px}
-  .hero-panel{position:relative;background:var(--panel);border-radius:220px 220px 24px 24px;padding:52px 36px 40px;text-align:center;overflow:hidden}
-  .hero-panel::before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;border:1.5px solid color-mix(in srgb, var(--terra) 40%, transparent);top:-120px;right:-110px}
-  .hero-panel::after{content:"";position:absolute;width:200px;height:200px;border-radius:50%;background:color-mix(in srgb, var(--terra) 14%, transparent);bottom:-80px;left:-60px}
-  .monogram-lg{position:relative;z-index:1;width:168px;height:168px;margin:0 auto;border-radius:50%;background:var(--green);color:var(--cream);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:58px;font-weight:600;letter-spacing:.02em;border:5px solid var(--cream);box-shadow:0 0 0 1.5px var(--line)}
-  .hero-panel .p-name{position:relative;z-index:1;font-family:"Playfair Display",serif;font-size:22px;font-weight:600;margin:22px 0 0}
-  .hero-panel .p-role{position:relative;z-index:1;font-size:11px;font-weight:700;letter-spacing:.26em;text-transform:uppercase;color:var(--terra);margin:6px 0 0}
-  .hero-panel .script-note{position:relative;z-index:1;font-size:27px;color:var(--rust);margin:18px 0 0;transform:rotate(-2deg)}
-  @media (prefers-color-scheme: dark){ .hero-panel .script-note{color:#E4A183} }
-
-  /* Section scaffolding */
-  section{padding:52px 0}
-  .sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap}
-  .sec-head h2{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(30px,3.6vw,40px);margin:10px 0 0;line-height:1.15}
-  .sec-head .viewall{font-size:12.5px;font-weight:700;letter-spacing:.1em;text-decoration:none;color:var(--terra);border-bottom:1.5px solid var(--terra);padding-bottom:3px;white-space:nowrap}
-  .sec-head .viewall:hover{color:var(--rust);border-color:var(--rust)}
-  .sec-rule{height:1px;background:var(--border);margin-top:20px;position:relative}
-  .sec-rule::before{content:"";position:absolute;left:0;top:-1px;width:72px;height:3px;background:var(--terra);border-radius:2px}
-  .sec-note{font-size:13px;color:var(--dim);font-weight:500}
-
-  /* 4 — About */
-  .about-grid{display:grid;grid-template-columns:340px 1fr;gap:48px;align-items:start}
-  @media (max-width:860px){ .about-grid{grid-template-columns:1fr;gap:30px} }
-  .about-photo{position:relative;text-align:center}
-  .monogram-circle{width:250px;height:250px;margin:0 auto;border-radius:50%;background:var(--panel);display:flex;align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:74px;font-weight:600;color:var(--green);border:1.5px solid var(--line);position:relative}
-  @media (prefers-color-scheme: dark){ .monogram-circle{color:var(--cream)} }
-  .monogram-circle::after{content:"";position:absolute;inset:12px;border-radius:50%;border:1.5px dashed color-mix(in srgb, var(--terra) 55%, transparent)}
-  .about-photo .script-note{font-size:28px;color:var(--rust);margin:14px 0 0;transform:rotate(-2deg)}
-  @media (prefers-color-scheme: dark){ .about-photo .script-note{color:#E4A183} }
-  .about-copy p{font-size:15.5px;line-height:1.75;color:var(--dim);margin:16px 0 0}
-  .about-copy p strong{color:var(--ink)}
-  .quote{font-family:"Playfair Display",serif;font-style:italic;font-size:21px;line-height:1.5;color:var(--green);margin:26px 0 0;padding-left:20px;border-left:3px solid var(--terra)}
-  @media (prefers-color-scheme: dark){ .quote{color:var(--cream)} }
-  .traits{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-  @media (max-width:560px){ .traits{grid-template-columns:1fr} }
-  .trait{background:var(--surface);border:1px solid var(--border);border-radius:16px;padding:18px 16px;text-align:center}
-  .trait svg{width:26px;height:26px;color:var(--terra)}
-  .trait h3{margin:9px 0 0;font-size:14px;font-weight:700}
-  .trait p{margin:4px 0 0;font-size:12.5px;color:var(--dim);line-height:1.5}
-
-  /* 5 — Selected Work */
-  .work-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:26px}
-  @media (max-width:960px){ .work-grid{grid-template-columns:1fr 1fr} }
-  @media (max-width:520px){ .work-grid{grid-template-columns:1fr} }
-  .work-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px 20px;display:flex;flex-direction:column}
-  .work-card .thumb{height:104px;border-radius:12px;background:var(--panel);display:flex;align-items:center;justify-content:center;color:var(--terra);margin-bottom:18px}
-  .work-card .thumb svg{width:36px;height:36px}
-  .work-card h3{margin:0;font-size:16.5px;font-weight:700;line-height:1.3}
-  .work-card .status{margin:10px 0 0;font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--terra)}
-  .work-card p{margin:8px 0 0;font-size:13.5px;line-height:1.6;color:var(--dim);flex:1}
-  .work-card a.samples{margin-top:16px;font-size:13px;font-weight:700;color:var(--terra);text-decoration:none}
-  .work-card a.samples:hover{color:var(--rust);text-decoration:underline}
-
-  /* 6 — Skills, Experience, Education */
-  .skills-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:26px}
-  @media (max-width:760px){ .skills-grid{grid-template-columns:1fr} }
-  .panel-card{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:26px}
-  .panel-card h3{margin:0;font-family:"Playfair Display",serif;font-size:21px;font-weight:600}
-  .skill-list{margin:16px 0 0;padding:0;list-style:none}
-  .skill-list li{font-size:14.5px;padding:8px 0 8px 24px;position:relative;border-bottom:1px solid var(--border)}
-  .skill-list li:last-child{border-bottom:none}
-  .skill-list li::before{content:"";position:absolute;left:2px;top:16px;width:8px;height:8px;border-radius:50%;background:var(--terra)}
-  .chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
-  .chips span{font-size:12.5px;font-weight:600;padding:7px 13px;border-radius:999px;background:var(--panel);border:1px solid var(--border)}
-  .panel-card p.note{margin:16px 0 0;font-size:13.5px;color:var(--dim);line-height:1.6}
-  .jobs{margin-top:10px}
-  .job{display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border)}
-  .job:last-child{border-bottom:none}
-  .job-main{flex:1;min-width:0}
-  .job h3{margin:0;font-size:16.5px;font-weight:700}
-  .job .co{color:var(--terra);font-weight:600;font-size:14.5px;margin:2px 0 0}
-  .job .desc{font-size:14px;color:var(--dim);line-height:1.65;margin:6px 0 0}
-  .job .period{font-size:12px;font-weight:700;letter-spacing:.04em;color:var(--dim);white-space:nowrap;padding-top:4px;text-align:right}
-  @media (max-width:560px){ .job{flex-direction:column;gap:4px} .job .period{text-align:left} }
-  .edu-card{margin-top:26px;background:var(--panel);border-radius:18px;padding:26px;display:flex;gap:20px;align-items:flex-start;flex-wrap:wrap}
-  .edu-card svg{width:30px;height:30px;color:var(--terra);flex-shrink:0;margin-top:2px}
-  .edu-card h3{margin:0;font-family:"Playfair Display",serif;font-size:21px;font-weight:600}
-  .edu-card p{margin:6px 0 0;font-size:14.5px;color:var(--dim);line-height:1.6}
-  .edu-card p strong{color:var(--ink)}
-
-  /* 7 — Services */
-  .services-layout{display:grid;grid-template-columns:320px 1fr;gap:14px;margin-top:26px;align-items:stretch}
-  @media (max-width:860px){ .services-layout{grid-template-columns:1fr} }
-  .svc-side{background:var(--green);color:#F7F0E6;border-radius:18px;padding:30px 26px;display:flex;flex-direction:column;justify-content:flex-end;min-height:300px;position:relative;overflow:hidden}
-  .svc-side .plant{position:absolute;top:22px;left:50%;transform:translateX(-50%);color:#CDE3B8;opacity:.9}
-  .svc-side .plant svg{width:130px;height:170px}
-  .svc-side .script-line{font-size:31px;line-height:1.25;text-align:center;margin:150px 0 0;position:relative}
-  .svc-side p.sub{text-align:center;font-size:13px;opacity:.82;margin:10px 0 0;position:relative;line-height:1.6}
-  .svc-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-  @media (max-width:560px){ .svc-grid{grid-template-columns:1fr} }
-  .svc{background:var(--surface);border:1px solid var(--border);border-radius:18px;padding:24px 22px;display:flex;flex-direction:column}
-  .svc svg.icon{width:30px;height:30px;color:var(--terra)}
-  .svc h3{margin:14px 0 0;font-size:16.5px;font-weight:700}
-  .svc p{margin:7px 0 0;font-size:13.5px;line-height:1.6;color:var(--dim);flex:1}
-  .svc .btn{align-self:flex-start;margin-top:18px;padding:9px 18px;font-size:11.5px}
-
-  /* 9 — CTA band */
-  .cta-band{background:var(--green);color:#F7F0E6;border-radius:26px;padding:52px 32px;text-align:center}
-  .cta-band h2{font-family:"Playfair Display",serif;font-weight:600;font-size:clamp(30px,4vw,42px);margin:0;line-height:1.15}
-  .cta-band h2 em{font-style:italic;color:#E9B48F}
-  .cta-band p{margin:14px auto 0;font-size:15.5px;line-height:1.65;opacity:.88;max-width:520px}
-  .cta-band .btn{margin-top:26px}
-
-  /* 10 — Footer */
-  footer{background:var(--footer-bg);color:#F7F0E6;margin-top:64px}
-  .footer-grid{max-width:1120px;margin:0 auto;padding:48px 24px 0;display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:32px}
-  @media (max-width:860px){ .footer-grid{grid-template-columns:1fr 1fr} }
-  @media (max-width:520px){ .footer-grid{grid-template-columns:1fr} }
-  .footer-grid .f-name{font-family:"Playfair Display",serif;font-size:23px;font-weight:700}
-  .footer-grid .f-role{font-size:10.5px;font-weight:700;letter-spacing:.28em;text-transform:uppercase;color:#D99B78;margin-top:4px}
-  .footer-grid p.tag{font-size:13.5px;line-height:1.65;opacity:.82;margin:14px 0 0;max-width:280px}
-  .footer-grid h4{margin:4px 0 14px;font-size:11.5px;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#D99B78}
-  .footer-grid ul{margin:0;padding:0;list-style:none}
-  .footer-grid ul li{margin-bottom:9px}
-  .footer-grid ul a{color:#F7F0E6;text-decoration:none;font-size:14px;opacity:.88}
-  .footer-grid ul a:hover{opacity:1;text-decoration:underline}
-  .footer-grid .f-contact{font-size:14px;line-height:1.7;opacity:.88}
-  .footer-grid .f-contact a{color:#F7F0E6;font-weight:600;word-break:break-all}
-  .follow-row{display:flex;gap:9px}
-  .follow-row a{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;border:1px solid rgba(247,240,230,.35);color:#F7F0E6;text-decoration:none}
-  .follow-row a:hover{border-color:#D99B78;color:#D99B78}
-  .follow-row svg{width:15px;height:15px}
-  .footer-bottom{max-width:1120px;margin:36px auto 0;padding:20px 24px 28px;border-top:1px solid rgba(247,240,230,.16);font-size:12.5px;opacity:.75;text-align:center}
-</style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rica Ann D. Ranario — Graphic Artist &amp; Digital Creative Professional | Cebu City</title>
+<meta name="description" content="Portfolio of Rica Ann D. Ranario, a Graphic Artist and Digital Creative Professional in Cebu City, Philippines — graphic design, social media graphics, Meta ads graphics, and website visuals.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Rica Ann D. Ranario — Graphic Artist &amp; Digital Creative Professional">
+<meta property="og:description" content="Graphic design, social media graphics, Meta ads graphics, and website visuals by Rica Ann D. Ranario, Cebu City.">
+<meta property="og:url" content="https://ranarioricaann-portfolio.github.io/graphic-portfolio/">
+<meta property="og:image" content="https://ranarioricaann-portfolio.github.io/graphic-portfolio/assets/favicon.svg">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;600;700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-
-<!-- 1 · Utility bar -->
-<div class="utility">
-  <div class="utility-inner">
-    <a href="mailto:ranarioricaann@gmail.com">ranarioricaann@gmail.com</a>
-    <span class="mid">Cebu City, Philippines</span>
-    <span class="right">Let&rsquo;s create something amazing together.</span>
-  </div>
-</div>
-
-<!-- 2 · Header / nav -->
+<a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
-  <div class="header-inner">
-    <a class="wordmark" href="#home">
-      <span class="name">Rica Ann D. Ranario</span>
-      <span class="role">Graphic Designer</span>
-    </a>
-    <nav class="mainnav" aria-label="Portfolio sections">
-      <a class="navlink" href="#home">Home</a>
-      <a class="navlink" href="#about">About</a>
-      <a class="navlink" href="#work">Work</a>
-      <a class="navlink" href="#services">Services</a>
-      <a class="navlink" href="#contact">Contact</a>
-      <a class="icon-btn" href="mailto:ranarioricaann@gmail.com" aria-label="Email Rica">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-      </a>
-      <a class="btn btn-terra btn-talk" href="mailto:ranarioricaann@gmail.com?subject=Graphic%20Artist%20Opportunity">LET&rsquo;S TALK</a>
+  <div class="wrap header-inner">
+    <a class="wordmark" href="index.html">Rica <span>Ranario</span></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav">Menu</button>
+    <nav class="main-nav" id="main-nav" aria-label="Main navigation">
+      <ul>
+        <li><a href="work.html" data-nav="work.html">Work</a></li>
+        <li><a href="about.html" data-nav="about.html">About</a></li>
+        <li><a href="contact.html" data-nav="contact.html">Contact</a></li>
+        <li><a class="btn btn-small" href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </div>
 </header>
-
-<div class="wrap">
-
-  <!-- 3 · Hero -->
-  <div class="hero" id="home">
-    <div class="hero-grid">
-      <div>
-        <p class="eyebrow">Graphic Designer</p>
-        <h1>I design visuals that help brands be <em>seen, remembered,</em> and trusted.</h1>
-        <p class="hero-sub"><strong>Marketing &amp; Design Professional</strong> crafting social media graphics, brand identities, product mockups, and Meta Ads that convert. Designing professionally since 2016 — from print-ready marketing collaterals to everyday social content and paid campaigns.</p>
-        <div class="hero-actions">
-          <a class="btn btn-terra" href="mailto:ranarioricaann@gmail.com?subject=Graphic%20Artist%20Opportunity">HIRE ME</a>
-          <a class="btn btn-outline" href="#work">VIEW WORK</a>
-        </div>
-        <div class="hero-facts">
-          <div><span class="num">4</span><span class="lbl">Design Categories</span></div>
-          <div><span class="num">2016</span><span class="lbl">Designing Since</span></div>
-          <div><span class="num">Cebu</span><span class="lbl">Based in Cebu City</span></div>
-        </div>
-      </div>
-      <div class="hero-panel" aria-label="Portrait placeholder for Rica Ann D. Ranario">
-        <div class="monogram-lg" aria-hidden="true">RR</div>
-        <p class="p-name">Rica Ann D. Ranario</p>
-        <p class="p-role">Graphic Designer</p>
-        <p class="script script-note">made with care, from Cebu</p>
-      </div>
-    </div>
-  </div>
-
-  <!-- 4 · About Me -->
-  <section id="about" aria-label="About Rica">
-    <div class="sec-head">
-      <div>
-        <p class="eyebrow">About Me</p>
-        <h2 class="serif">A designer who cares<br />about the details</h2>
-      </div>
-    </div>
-    <div class="sec-rule"></div>
-    <div class="about-grid" style="margin-top:34px">
-      <div class="about-photo">
-        <div class="monogram-circle" aria-hidden="true">RR</div>
-        <p class="script script-note">hello, I&rsquo;m Rica!</p>
-      </div>
-      <div class="about-copy">
-        <p><strong>Marketing and Design Professional</strong> with experience spanning graphic design, social media marketing, digital advertising, and video reporting. I help brands show up consistently — from everyday social content and product visuals to logo systems and paid Meta campaigns.</p>
-        <p>My background in Information Technology gives me a practical, detail-driven approach to design production and file delivery, and I&rsquo;m currently a Marketing Assistant creating social media graphics, website visuals, and Meta Ads campaigns.</p>
-        <p class="quote">&ldquo;Good design is quiet about itself — it simply makes the brand easy to love.&rdquo;</p>
-        <div style="margin-top:24px">
-          <a class="btn btn-outline" href="#experience">MORE ABOUT ME</a>
-        </div>
-        <div class="traits">
-          <div class="trait">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M9 18h6M10 21h4"/><path d="M12 3a6 6 0 0 0-4 10.5c.8.7 1 1.5 1 2.5h6c0-1 .2-1.8 1-2.5A6 6 0 0 0 12 3z"/></svg>
-            <h3>Creative Thinking</h3>
-            <p>Fresh ideas for every brief, post, and campaign.</p>
-          </div>
-          <div class="trait">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r="1" fill="currentColor"/></svg>
-            <h3>Detail Focused</h3>
-            <p>Careful layouts, clean files, ready for production.</p>
-          </div>
-          <div class="trait">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1-1.1a5.5 5.5 0 1 0-7.8 7.8l1 1L12 21.2l7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
-            <h3>Client Centered</h3>
-            <p>Designs refined with feedback until they feel right.</p>
-          </div>
-        </div>
+<main id="main">
+  <section class="hero" aria-labelledby="hero-heading">
+    <div class="wrap">
+      <p class="eyebrow">Graphic Artist · Cebu City, Philippines</p>
+      <h1 id="hero-heading">I turn ideas into visuals that make brands stand out.</h1>
+      <p class="lead">I'm Rica, a Graphic Artist and Digital Creative Professional with experience in graphic design, social media graphics, Meta ads graphics, and website visuals. I create engaging visual content that helps businesses communicate their message and maintain a consistent brand identity.</p>
+      <div class="hero-actions">
+        <a class="btn" href="work.html">View My Work</a>
+        <a class="btn btn-light" href="assets/Rica-Ann-Ranario-CV.pdf" download>Download CV</a>
       </div>
     </div>
   </section>
 
-  <!-- 5 · Selected Work -->
-  <section id="work" aria-label="Selected work">
-    <div class="sec-head">
-      <div>
+  <section aria-labelledby="featured-heading">
+    <div class="wrap">
+      <div class="section-head">
         <p class="eyebrow">Portfolio</p>
-        <h2 class="serif">Selected Work</h2>
+        <h2 id="featured-heading">Selected Work</h2>
+        <p>Work is organised into category folders — open a folder to see the pieces inside it. Real work so far: 8 story graphics in Social Media Graphics and 2 projects · 8 videos in Meta Ads Graphics. No placeholder is presented as real work.</p>
       </div>
-      <a class="viewall" href="#work">VIEW ALL PROJECTS</a>
-    </div>
-    <div class="sec-rule"></div>
-    <div class="work-grid">
-      <article class="work-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg></div>
-        <h3>Social Media Graphics</h3>
-        <p class="status">Work on its way</p>
-        <p>Feed posts, stories, and campaign visuals are being added here. Samples are available on request.</p>
-        <a class="samples" href="mailto:ranarioricaann@gmail.com?subject=Social%20Media%20Graphics%20Samples">Request samples by email &rarr;</a>
-      </article>
-      <article class="work-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5L8 13.8 2 9.2h7.6z"/></svg></div>
-        <h3>Logo Design</h3>
-        <p class="status">Work on its way</p>
-        <p>Logo and brand identity pieces are being added here. Samples are available on request.</p>
-        <a class="samples" href="mailto:ranarioricaann@gmail.com?subject=Logo%20Design%20Samples">Request samples by email &rarr;</a>
-      </article>
-      <article class="work-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg></div>
-        <h3>Product Mockups</h3>
-        <p class="status">Work on its way</p>
-        <p>Product and packaging mockups are being added here. Samples are available on request.</p>
-        <a class="samples" href="mailto:ranarioricaann@gmail.com?subject=Product%20Mockup%20Samples">Request samples by email &rarr;</a>
-      </article>
-      <article class="work-card">
-        <div class="thumb"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M7 13v5a2 2 0 0 0 4 0v-4M17 8a4 4 0 0 1 0 6"/></svg></div>
-        <h3>Meta Ads Graphics</h3>
-        <p class="status">Work on its way</p>
-        <p>Meta Ads creatives are being added here. Samples are available on request.</p>
-        <a class="samples" href="mailto:ranarioricaann@gmail.com?subject=Meta%20Ads%20Graphics%20Samples">Request samples by email &rarr;</a>
-      </article>
-    </div>
-  </section>
-
-  <!-- 6 · Skills & Tools -->
-  <section id="skills" aria-label="Core skills and tools">
-    <div class="sec-head">
-      <div>
-        <p class="eyebrow">Expertise</p>
-        <h2 class="serif">Core Skills &amp; Tools</h2>
-      </div>
-      <span class="sec-note">What I work with every day</span>
-    </div>
-    <div class="sec-rule"></div>
-    <div class="skills-grid">
-      <div class="panel-card">
-        <h3>Core Skills</h3>
-        <ul class="skill-list">
-          <li>Social Media Graphics</li>
-          <li>Graphic Design &amp; Layout</li>
-          <li>Digital Advertising</li>
-          <li>Meta Ads Creatives</li>
-          <li>Brand Identity &amp; Logos</li>
-          <li>Product Mockups</li>
-        </ul>
-      </div>
-      <div class="panel-card">
-        <h3>Tools I Use</h3>
-        <div class="chips">
-          <span>Photoshop</span><span>Illustrator</span><span>CorelDRAW X7</span><span>Canva</span><span>VSDC Video Editor</span><span>Dreamweaver</span><span>Meta Ads Manager</span>
-        </div>
-        <p class="note">Based in Cebu City, Philippines — available for Cebu-based and remote PH roles. Call <a href="tel:+639945936168" style="color:var(--terra);font-weight:600">0994 593 6168</a> or email <a href="mailto:rainy_rica@yahoo.com" style="color:var(--terra);font-weight:600">rainy_rica@yahoo.com</a>.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 6 · Experience -->
-  <section id="experience" aria-label="Work experience">
-    <div class="sec-head">
-      <div>
-        <p class="eyebrow">Career</p>
-        <h2 class="serif">Experience</h2>
-      </div>
-      <span class="sec-note">2016 — Present</span>
-    </div>
-    <div class="sec-rule"></div>
-    <div class="jobs">
-      <div class="job">
-        <div class="job-main">
-          <h3>Marketing Assistant</h3>
-          <p class="co">Staff Outsourcing Solutions</p>
-          <p class="desc">Created and managed social media graphics and content to boost engagement, executed and optimised Meta Ads campaigns, and designed website visuals for consistent branding.</p>
-        </div>
-        <span class="period">Aug 2024 — Present</span>
-      </div>
-      <div class="job">
-        <div class="job-main">
-          <h3>Video Report Specialist</h3>
-          <p class="co">Qima Philippines Inc.</p>
-          <p class="desc">Edited and finalised client reports using video editing tools and presentation software, validated inspection reports for accuracy and compliance, and delivered reports on time.</p>
-        </div>
-        <span class="period">Oct 2022 — Apr 2024</span>
-      </div>
-      <div class="job">
-        <div class="job-main">
-          <h3>Social Media Marketing Assistant</h3>
-          <p class="co">Vismotor Corp.</p>
-          <p class="desc">Managed customer inquiries via Facebook and social platforms, created and published promotional content, and maintained product listings on Lazada, Shopee, and the company website.</p>
-        </div>
-        <span class="period">Nov 2020 — Jan 2021</span>
-      </div>
-      <div class="job">
-        <div class="job-main">
-          <h3>Graphic Artist</h3>
-          <p class="co">Eastworld Sales Philippines Inc.</p>
-          <p class="desc">Designed logos, marketing materials, and layouts for various clients, refined designs from client feedback, and prepared final design specifications for production.</p>
-        </div>
-        <span class="period">Jul 2016 — Feb 2020</span>
-      </div>
-    </div>
-
-    <div class="edu-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 10v6"/></svg>
-      <div>
-        <h3>Education</h3>
-        <p><strong>BS Information Technology</strong><br />Asian College of Technology · 2016</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- 7 · Services -->
-  <section id="services" aria-label="Design services">
-    <div class="sec-head">
-      <div>
-        <p class="eyebrow">What I Offer</p>
-        <h2 class="serif">My Services</h2>
-      </div>
-      <span class="sec-note">Four specialisations</span>
-    </div>
-    <div class="sec-rule"></div>
-    <div class="services-layout">
-      <aside class="svc-side">
-        <div class="plant" aria-hidden="true">
-          <svg viewBox="0 0 130 170" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round">
-            <path d="M65 92 C65 60 60 38 40 22"/><path d="M65 92 C65 54 74 32 96 18"/><path d="M65 92 C64 66 56 52 34 48"/><path d="M65 92 C66 64 78 50 100 50"/>
-            <path d="M40 22 C28 30 26 12 40 6 C52 12 50 28 40 22Z" fill="currentColor" stroke="none" opacity=".55"/>
-            <path d="M96 18 C86 4 104 0 110 10 C112 24 100 28 96 18Z" fill="currentColor" stroke="none" opacity=".55"/>
-            <path d="M34 48 C20 46 24 32 36 34 C46 38 42 50 34 48Z" fill="currentColor" stroke="none" opacity=".55"/>
-            <path d="M100 50 C112 40 122 52 112 60 C102 64 96 58 100 50Z" fill="currentColor" stroke="none" opacity=".55"/>
-            <path d="M46 92 h38 l-5 62 a6 6 0 0 1-6 5 H57 a6 6 0 0 1-6-5 Z" fill="#A65A3E" stroke="none"/>
-            <path d="M42 92 h46" stroke="#EFE3D3"/>
-          </svg>
-        </div>
-        <p class="script script-line">Good design,<br />good business.</p>
-        <p class="sub">Thoughtful visuals, made to help your brand grow.</p>
-      </aside>
-      <div class="svc-grid">
-        <article class="svc">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".8" fill="currentColor"/></svg>
-          <h3>Social Media Graphics</h3>
-          <p>Scroll-stopping posts, stories, and campaign visuals that keep a brand consistent day after day.</p>
-          <a class="btn btn-outline-terra" href="mailto:ranarioricaann@gmail.com?subject=Social%20Media%20Graphics%20Project">GET STARTED</a>
+      <div class="grid grid-3">
+        <article class="card folder-card" data-category="social-media-graphics">
+          <img class="card-img-story" src="assets/stories/story-celebrity-spring-sale.jpg" alt="Folder cover: Celebrity Cruises — Spring Sale social media story graphic with The Cruise Web logo: 75% off 2nd guest, up to $650 bonus savings, free 3rd, 4th and 5th guests" width="1080" height="1920">
+          <div class="card-body"><span class="tag">Folder</span><h3>Social Media Graphics</h3><p>8 story graphics.</p><a class="card-link" href="social-media-stories.html">Open folder</a></div>
         </article>
-        <article class="svc">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 2l2.4 7.2H22l-6 4.6 2.3 7.2-6.3-4.5-6.3 4.5L8 13.8 2 9.2h7.6z"/></svg>
-          <h3>Logo Design</h3>
-          <p>Clean, memorable marks and identity visuals a brand can use the same way everywhere.</p>
-          <a class="btn btn-outline-terra" href="mailto:ranarioricaann@gmail.com?subject=Logo%20Design%20Project">GET STARTED</a>
+        <article class="card folder-card" data-category="logo-design">
+          <img src="assets/placeholders/logo-design.svg" alt="Placeholder cover — design samples to be added to the Logo Design folder" width="800" height="600">
+          <div class="card-body"><span class="tag">Folder</span><h3>Logo Design</h3><p>Work on its way — samples available on request.</p><a class="card-link" href="logo-design.html">Open folder</a></div>
         </article>
-        <article class="svc">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M21 8l-9-5-9 5v8l9 5 9-5z"/><path d="M3 8l9 5 9-5M12 13v8"/></svg>
-          <h3>Product Mockups</h3>
-          <p>Product and packaging visuals that help customers picture the real thing, for listings and sales materials.</p>
-          <a class="btn btn-outline-terra" href="mailto:ranarioricaann@gmail.com?subject=Product%20Mockup%20Project">GET STARTED</a>
+        <article class="card folder-card" data-category="product-mockups">
+          <img src="assets/placeholders/product-mockups.svg" alt="Placeholder cover — design samples to be added to the Product Mockups folder" width="800" height="600">
+          <div class="card-body"><span class="tag">Folder</span><h3>Product Mockups</h3><p>Work on its way — samples available on request.</p><a class="card-link" href="product-mockups.html">Open folder</a></div>
         </article>
-        <article class="svc">
-          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M3 11l14-5v12L3 13v-2z"/><path d="M7 13v5a2 2 0 0 0 4 0v-4M17 8a4 4 0 0 1 0 6"/></svg>
-          <h3>Meta Ads Graphics</h3>
-          <p>Paid social creatives designed to earn the click — clear offer, strong hierarchy, made for Facebook &amp; Instagram.</p>
-          <a class="btn btn-outline-terra" href="mailto:ranarioricaann@gmail.com?subject=Meta%20Ads%20Graphics%20Project">GET STARTED</a>
+        <article class="card folder-card" data-category="digital-advertising">
+          <img src="assets/videos/celebrity-cruiseweb-meta-ad-1x1-poster.jpg" alt="Folder cover: frame from the Celebrity Cruises Meta video ad, square version — Celebrity Edge ship with The Cruise Web logo and Limited-Time Offer text" width="1080" height="1080">
+          <div class="card-body"><span class="tag">Folder</span><h3>Meta Ads Graphics</h3><p>2 projects · 8 videos.</p><a class="card-link" href="meta-ads-graphics.html">Open folder</a></div>
         </article>
       </div>
+      <p style="margin-top:2rem"><a href="work.html">View all projects →</a></p>
     </div>
   </section>
 
-  <!-- 9 · Let's Work Together -->
-  <section id="contact" aria-label="Work with Rica" style="padding-top:8px">
-    <div class="cta-band">
-      <h2>Let&rsquo;s Work <em>Together</em></h2>
-      <p>Hiring a graphic artist, or have a project in mind? Send the details and I&rsquo;ll reply with relevant samples and next steps.</p>
-      <a class="btn btn-cream" href="mailto:ranarioricaann@gmail.com?subject=Graphic%20Artist%20Opportunity">GET IN TOUCH</a>
-    </div>
-  </section>
-</div>
-
-<!-- 10 · Footer -->
-<footer>
-  <div class="footer-grid">
-    <div>
-      <div class="f-name">Rica Ann D. Ranario</div>
-      <div class="f-role">Graphic Designer</div>
-      <p class="tag">Social media graphics, logos, product mockups, and Meta Ads — designed with care from Cebu City.</p>
-    </div>
-    <div>
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+  <section class="section-alt" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">What I do</p><h2 id="services-heading">Services</h2></div>
+      <ul class="services">
+        <li>Graphic Design &amp; Marketing Materials</li>
+        <li>Social Media Graphics &amp; Visual Content</li>
+        <li>Meta Ads &amp; Advertising Creatives</li>
+        <li>Website Graphic Updates</li>
+        <li>Video Editing &amp; Presentation Content</li>
       </ul>
     </div>
-    <div>
-      <h4>Follow Me</h4>
-      <div class="follow-row">
-        <a href="mailto:ranarioricaann@gmail.com" aria-label="Email Rica">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
-        </a>
-        <a href="tel:+639945936168" aria-label="Call Rica">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        </a>
-      </div>
-      <p class="tag" style="max-width:none">Reach me fastest by email — I reply with samples for the role or project you have in mind.</p>
-    </div>
-    <div>
-      <h4>Get in Touch</h4>
-      <p class="f-contact">
-        <a href="mailto:ranarioricaann@gmail.com">ranarioricaann@gmail.com</a><br />
-        <a href="mailto:rainy_rica@yahoo.com">rainy_rica@yahoo.com</a><br />
-        <a href="tel:+639945936168">0994 593 6168</a><br />
-        Cebu City, Philippines
-      </p>
-    </div>
-  </div>
-  <div class="footer-bottom">&copy; 2026 Rica Ann D. Ranario. All rights reserved.</div>
-</footer>
+  </section>
 
+  <section aria-labelledby="about-preview-heading">
+    <div class="wrap two-col">
+      <div><p class="eyebrow">About</p><h2 id="about-preview-heading">About preview</h2></div>
+      <div>
+        <p>My professional background combines graphic design, marketing support, and digital content production. I bring attention to detail, adaptability, and a collaborative approach to creative projects, with a focus on delivering high-quality work within deadlines.</p>
+        <p><a href="about.html">More about me →</a></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-alt" aria-labelledby="experience-heading">
+    <div class="wrap">
+      <div class="section-head"><p class="eyebrow">Career</p><h2 id="experience-heading">Experience highlights</h2></div>
+      <ol class="timeline">
+        <li><div class="when">August 2024 – Present</div><div><h3>Marketing Assistant — Staff Outsourcing Solutions</h3><ul><li>Created and managed social media graphics and content</li><li>Executed and optimized Meta Ads campaigns</li><li>Designed and updated website visuals to maintain consistent branding</li></ul></div></li>
+        <li><div class="when">October 2022 – April 2024</div><div><h3>Video Report Specialist — QIMA Philippines Inc.</h3><ul><li>Edited and finalized client reports using video editing tools and presentation software</li><li>Validated inspection reports for accuracy and compliance</li></ul></div></li>
+        <li><div class="when">July 2016 – February 2020</div><div><h3>Graphic Artist — Eastworld Sales Philippines Inc.</h3><ul><li>Designed logos, marketing materials, and layouts for various clients</li><li>Collaborated with clients to refine designs based on feedback</li><li>Prepared final design specifications for production</li></ul></div></li>
+      </ol>
+    </div>
+  </section>
+
+  <section aria-labelledby="contact-heading">
+    <div class="wrap">
+      <h2 id="contact-heading">Have a project or creative role in mind?</h2>
+      <p class="lead">I welcome employment and freelance enquiries.</p>
+      <div class="cta-actions">
+        <a class="btn" href="contact.html">Contact</a>
+        <a class="btn btn-light" href="assets/Rica-Ann-Ranario-CV.pdf" download>Download CV</a>
+      </div>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div><strong>Rica Ranario</strong><br><span>Graphic Artist &amp; Digital Creative Professional — Cebu City, Philippines</span></div>
+    <div><a href="work.html">Work</a> · <a href="about.html">About</a> · <a href="contact.html">Contact</a><br>© <span id="year">2026</span> Rica Ann D. Ranario</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
 </body>
 </html>
